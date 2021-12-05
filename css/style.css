@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  background-size: cover;
+  background-position: top;
+}
+
+.card {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #fff;
+  display: block;
+  max-width: 310px;
+  margin: 0 auto;
+  box-shadow: 0px 3px 7px -4px #222;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.card .content {
+  padding: 0rem 1rem 1em 1rem;
+}
+.card .content .top {
+  text-align: center;
+}
+.card .content .top h1 {
+  margin: 1rem 0;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #1f2f56;
+}
+.card .content .top p {
+  color: #7280a7;
+  font-weight: 500;
+  width: 260px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+.card .content .plan-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f7ff;
+  padding: 0 1.3rem;
+  margin: 1.4rem 0;
+  border-radius: 7px;
+}
+.card .content .plan-card img {
+  width: 40px;
+  flex: 0 0 20px;
+  margin-right: 1rem;
+}
+.card .content .plan-card .center {
+  margin: 1.4rem 0;
+  padding: 0;
+}
+.card .content .plan-card .center h1 {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+.card .content .plan-card .center span {
+  font-weight: 500;
+  color: #7280a7;
+  font-size: 1rem;
+}
+.card .content .plan-card a {
+  flex: 1 0 0;
+  margin-left: 1rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.card .content .plan-card a:hover {
+  color: #3829e0;
+}
+.card .content .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card .content .buttons .proceedbtn {
+  display: block;
+  padding: 0.8rem 2.7rem;
+  background-color: #3829e0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.card .content .buttons .proceedbtn:hover {
+  background-color: #3e52a3;
+  box-shadow: 0px 5px 20px rgba(56, 41, 224, 0.692);
+}
+.card .content .buttons .cancelbtn {
+  border: none;
+  font-size: 0.8rem;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  color: #7280a7;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: 0.5s ease;
+}
+.card .content .buttons .cancelbtn:hover {
+  color: #1f2f56;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+
+  .card {
+    max-width: 370px;
+  }
+  .card .content .top h1 {
+    font-size: 1.8rem;
+  }
+  .card .content .top p {
+    color: #7280a7;
+    font-weight: 500;
+    width: 260px;
+    margin: 0 auto;
+    line-height: 25px;
+  }
+  .card .content .plan-card {
+    margin: 1rem 0;
+  }
+  .card .content .plan-card .center h1 {
+    font-size: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .card .content .plan-card .center span {
+    font-size: 0.9rem;
+  }
+  .card .content .buttons .proceedbtn {
+    font-size: 1.3rem;
+    padding: 0.8rem 4.6rem;
+  }
+  .card .content .buttons .cancelbtn {
+    font-size: 1.4rem;
+  }
+  .card .content .buttons .cancelbtn:hover {
+    color: #1f2f56;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,198 @@
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .attribution {
+        position:fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        font-size: 11px; 
+        text-align: center; 
+        a { color: hsl(228, 45%, 44%);
+        }
+    }
+    
+    body{
+        height:100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("/images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-color:  hsl(225, 100%, 94%);
+        background-size: cover;
+        background-position:top;
+    }
+    
+    .card{
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background-color: #fff;
+        display: block;
+        max-width:310px;
+        margin:0 auto;
+        box-shadow: 0px 3px 7px -4px #222;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-top-right-radius: 15px;
+                border-top-left-radius: 15px;
+            }
+        .content{
+            padding:0rem 1rem 1em 1rem;
+            .top{
+                text-align: center;
+                h1{
+                    margin:1rem 0;
+                    font-weight:900;
+                    font-size: 1.4rem;
+                    color:hsl(223, 47%, 23%);
+                }
+                p{
+                    color:hsl(224, 23%, 55%);
+                    font-weight: 500;
+                    width:260px;
+                    margin:0 auto;
+                    line-height: 25px;
+                }
+            }
+            .plan-card{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: hsl(225, 100%, 98%);
+                padding:0 1.3rem;
+                margin:1.4rem 0;
+                border-radius: 7px;
+                img{
+                    width:40px;
+                    flex:0 0 20px;
+                    margin-right: 1rem;
+                }
+                .center{
+                    margin:1.4rem 0;
+                    padding:0;
+                    h1{
+                        font-weight: 700;
+                        font-size:.9rem;
+                        margin-right:1rem;
+                    }
+                    span{
+                        font-weight:500;
+                        color:hsl(224, 23%, 55%);
+                        font-size: 1rem;
+                    }
+                }
+                a{
+                    flex:1 0 0;
+                    margin-left:1rem;
+                    transition: .3s ease;
+                    cursor: pointer;
+                    font-size:1rem;
+                    &:hover{
+                    color: hsl(245, 75%, 52%);
+
+                    }
+                }
+            }
+
+            .buttons{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .proceedbtn{
+                    display: block;
+                    padding:.8rem 2.7rem;
+                    background-color: hsl(245, 75%, 52%);
+                    color:#fff;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    border-radius: 15px;
+                    border:none;
+                    outline:none;
+                    transition: .4s ease;
+                    cursor: pointer;
+                    margin-bottom:1rem;
+                    &:hover{
+                        background-color: hsl(228, 45%, 44%);
+                    box-shadow: 0px 5px 20px hsla(245, 75%, 52%, 0.692);
+
+                    }
+                }
+                .cancelbtn{
+                    border:none;
+                    font-size: .8rem;
+                    outline:none;
+                    background:transparent;
+                    cursor: pointer;
+                    color:hsl(224, 23%, 55%);
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                    transition: .5s ease;
+                    &:hover{
+                        color:hsl(223, 47%, 23%);
+                    }
+                }
+            }
+        }
+       
+    }
+
+
+
+    @media screen and (min-width:375px) {
+        body{
+            background-image: url("/images/pattern-background-desktop.svg");
+            
+        }
+        .card{
+            max-width:370px;
+            .content{
+                .top{
+                    h1{
+                        font-size: 1.8rem;
+                    }
+                    p{
+                        color:hsl(224, 23%, 55%);
+                        font-weight: 500;
+                        width:260px;
+                        margin:0 auto;
+                        line-height: 25px;
+                    }
+                }
+                .plan-card{
+                    margin:1rem 0;
+                    .center{
+                        h1{
+                            font-size:1.2rem;
+                            margin-right:1.2rem;
+                        }
+                        span{
+                            font-size: .9rem;
+                        }
+                    }
+                }
+    
+                .buttons{
+                    .proceedbtn{
+                        font-size: 1.3rem;
+                        padding:.8rem 4.6rem;
+                    }
+                    .cancelbtn{
+                        font-size: 1.4rem;
+                        &:hover{
+                            color:hsl(223, 47%, 23%);
+                        }
+                    }
+                }
+            }
+           
+        } 
+    }
